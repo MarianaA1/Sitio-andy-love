@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(253, 241, 192);
+    font-family: 'Amiri', serif;
+    line-height: 1.2em;
+}
+                                                /* HEADER */
+    #LIGHT {
+        width: 100%;
+        min-height: 200px;
+        overflow: hidden;
+    }
+
+        .imagenresponsiva {width: 100%; height: auto;}
+                                                 /*LOGO*/
+        #LOGO {
+            display: flex;
+            width: 100%;
+            height: 290px;
+        }
+
+            #andy-love{
+                padding: 7%;
+                min-width: 68%; 
+                min-height: 68%; 
+                border-radius:1000px;
+                background: radial-gradient(rgb(255, 223, 97), rgb(255, 249, 222));
+                margin: auto;
+            }
+
+                .imagenresponsivah{width: auto; height: 100%;}
+                                                /* MISION */
+    #TEXTO {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+    }
+
+        #mision {width: 80%; height: 350px;}
+
+            .subtitulos {font-family: 'Marck Script', cursive; color: #330a00;}
+
+            .contenido {color: #330a00;}
+                                                /* MENÚ */
+    #MENU{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 780px;
+        flex-direction: column;
+    }
+
+        #platillos01, #platillos02, #platillos03{
+            display: flex;
+            width: 100%;
+            height: 260px;
+            background-image:url(svg-light/franja-am-light.svg);
+            background-size:100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        #platillos02{ height: 150px; background-image: none;}
+        #platillos03{ background-image: url(svg-light/franja-ca-light.svg);}
+
+            .plato{
+                width: 40%;
+                height: 140px;
+                overflow: hidden;
+                margin: auto;
+                margin-top: 50px;
+            }
+            .plato:active {transform: scale(1.1); transition: 0.1s;}
+
+        #platillos02 .plato{margin-bottom: none; margin: auto;}
+
+                .boton{text-decoration: none; margin: auto;}
+
+                    .nombres-platos{
+                        font-family: 'Marck Script', cursive;
+                        font-size:1.3em;
+                        color: #330a00;
+                    }
+                                            /*PIE DE PÁGINA*/
+    #REDES-SOCIALES{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            width: 100%;
+            height: 240px;
+            background-image:url(img/granos-cafe.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+    }
+        #centrado-texto{
+            display: flex;
+            width: 100%;
+            height: 40px;
+        }
+
+            .sub-subtitulo{
+                font-family: 'Marck Script', cursive;
+                font-size:1.6em;
+                color: #330a00;
+                margin: auto;
+            }
+
+        #redes{
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            height: 100px;
+        }
+
+            .fb-tw{ width:25% ; height: 73%;}
+
+                .fa{
+                    font-size: 5em!important;
+                    color:#cc5200;
+                }
+                .fa:active{ color: #993d00;}
+                                            /*IMAGEN DE ENSALADA*/
+    #IMAGEN-PLATO{
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+        #IMAGEN-PLATO #andy-love{
+            padding: none;
+            min-width: 88%; 
+            min-height: 88%; 
+        }
+                                            /*TIPOS DE ENSALADAS*/
+    .ALIMENTO01, .ALIMENTO02, .ALIMENTO03{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 180px;
+        background-image:url(svg-light/con-franja-am-light.svg);
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+
+    .ALIMENTO02{height: 110px; background-image: none;}
+    .ALIMENTO03{background-image: url(svg-light/con-franja-ca-light.svg);}
+
+        .name-food{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+        }
+
+            .imagenresponsivahh{
+                width:auto;
+                height: 50%;
+            }
+        .texto-precio{
+            display: flex;
+            width: 95%;
+            height: 100px;
+        }
+
+                .ingredientes{
+                    display: flex;
+                    width: 85%;
+                    height: 100%;
+                    margin-left: 9%;
+                }
+            
+            .contenedor-icono, .contenedor-icono-p, .contenedor-icono-m, .contenedor-icono-q, 
+            .contenedor-icono-c, .contenedor-icono-h{
+                display: flex;
+                width: 17%;
+                height: 50%;
+                background-image: url(svg-light/lemon-solid.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .ALIMENTO01 .contenedor-icono-p, .ALIMENTO02 .contenedor-icono-p, .ALIMENTO03 .contenedor-icono-p{
+                background-image: url(svg-light/bread-slice-solid.svg);}
+            .ALIMENTO01 .contenedor-icono-m, .ALIMENTO02 .contenedor-icono-m, .ALIMENTO03 .contenedor-icono-m{
+                    padding:4% 2% 0 0; background-image: url(svg-light/apple-alt-solid.svg);}
+            .ALIMENTO01 .contenedor-icono-q, .ALIMENTO02 .contenedor-icono-q, .ALIMENTO03 .contenedor-icono-q{
+                background-image: url(svg-light/cheese-solid.svg);}
+            .ALIMENTO01 .contenedor-icono-c, .ALIMENTO02 .contenedor-icono-c, .ALIMENTO03 .contenedor-icono-c{
+                padding: 5% 4% 0 0; background-image: url(svg-light/mug-hot-solid.svg);}
+            .ALIMENTO01 .contenedor-icono-h, .ALIMENTO02 .contenedor-icono-h, .ALIMENTO03 .contenedor-icono-h{
+                    background-image: url(svg-light/leaf-solid.svg);}
+            
+            .ALIMENTO02 .contenedor-icono, .ALIMENTO02 .contenedor-icono-p, .ALIMENTO02 .contenedor-icono-m,
+            .ALIMENTO02 .contenedor-icono-q, .ALIMENTO02 .contenedor-icono-c, .ALIMENTO02 .contenedor-icono-h{ height: 90%;}
+                                                /*BOTON HOME*/
+    #BOTON-HOME{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+    }
+
+            #BOTON-HOME .fa {font-size: 5.7em!important; color:#3f0d00;}
+            #BOTON-HOME .fa:active {color:#1d0600;}
+
+                                                 /*DARK INDEX*/
+    #DARK{background-color: #3f0d00;}
+    #DARK #andy-love{background: radial-gradient( #1a0000, #4e1000);}
+    #DARK .subtitulos, #DARK .contenido, #DARK .sub-subtitulo, #DARK .nombres-platos{color: rgb(253, 241, 192)}
+    #DARK #platillos01{background-image: url(svg-dark/franja-cla-dark.svg);}
+    #DARK #platillos03{background-image: url(svg-dark/franja-ob-dark.svg);}
+    #DARK #REDES-SOCIALES{background-image: url(img/granos-cafe-dark.webp);}
+    #DARK .fa{color: #d19d50;} #DARK .fa:active{color:#fdd394;}
+
+                                            /*DARK CONTENIDO*/
+    #DARK .ALIMENTO01{background-image:url(svg-dark/con-franja-cla-dark.svg);}
+    #DARK .ALIMENTO02{background-image:none;}
+    #DARK .ALIMENTO03{background-image:url(svg-dark/con-franja-ob-dark.svg);}
+    #DARK #BOTON-HOME .fa {font-size: 5.7em!important; color:#facd8b;}
+    #DARK #BOTON-HOME .fa:active {color: #fde2ba;}
+    #DARK .contenedor-icono .sub-subtitulo, #DARK .contenedor-icono-p .sub-subtitulo, 
+    #DARK .contenedor-icono-m .sub-subtitulo,#DARK .contenedor-icono-c .sub-subtitulo {color: #330a00;}
+    #DARK .contenedor-icono-q .sub-subtitulo{color: rgb(92, 65, 15)}
+    #DARK .contenedor-icono-h .sub-subtitulo{color: rgb(26, 0, 0)}
